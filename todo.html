@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<style>
+			li {
+				height: 30px;
+				width: 300px;
+				display: flex;
+				font-weight: 600;
+				font-size: 20px;
+				justify-content: space-between;
+				align-items: center;
+				border: 1px solid #ccc;
+				padding: 5px;
+			}
+			.underline {
+				text-decoration: line-through double;
+				text-decoration-color: #666;
+			}
+
+			.dark {
+				background: #000;
+				color: white;
+			}
+			.darkMode {
+				display: inline-block;
+				padding: 10px 20px;
+				border: 1px solid #666;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<h2 class="darkMode">dark mode</h2>
+		<h2 class="clear">all clear</h2>
+		<h1>Todo</h1>
+		<input type="text" class="input" />
+		<button class="add">add</button>
+
+		<ol class="todos"></ol>
+
+		<script src="./todo.js"></script>
+	</body>
+</html>
